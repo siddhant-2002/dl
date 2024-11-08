@@ -1,0 +1,36 @@
+TensorFlow
+-TensorFlow provides powerful APIs to create various neural network architectures, from simple feedforward networks to complex, deep neural networks, convolutional neural networks (CNNs), recurrent neural networks (RNNs), and more.
+-TensorFlow supports automatic differentiation, which calculates gradients automatically. This is essential for training deep learning models, as it allows for the efficient optimization of model parameters through backpropagation.
+TensorFlow supports efficient data loading and pre-processing, allowing for seamless handling of large datasets
+-TensorFlow includes TensorBoard, a visualization tool that lets you monitor model training in real time. You can track metrics like loss and accuracy, visualize the architecture of neural networks, and analyze performance.
+
+Keras
+-Keras is a high-level deep learning library that makes it easy to build, train, and evaluate neural networks.
+- Initially developed as an independent library, Keras is now integrated with TensorFlow as its official high-level API,simplifying the process of creating complex neural networks without needing to handle the low-level details.
+-  Its intuitive syntax lets users create models with just a few lines of code.
+- Keras is designed with simplicity and readability in mind, providing a clear and consistent API
+-  It abstracts many of the complex and repetitive tasks involved in neural network design, letting developers focus on model innovation. 
+Keras Keras is a high-level API designed for human-friendly, easy-to-use neural network development. Its goal is to simplify the creation of deep learning models, allowing developers to focus on designing and experimenting with architectures.
+TensorFlow TensorFlow is a comprehensive machine learning framework developed by Google, used for building, training, and deploying deep learning models at scale. TensorFlow includes both high-level (like Keras) and low-level APIs, making it powerful and flexible for a wide range of machine learning tasks.
+For integrating machine learning (ML) and deep learning (DL) models, TensorFlow is often the preferred choice because of its flexibility, scalability, and support for a broad range of machine learning techniques
+
+Theano
+Theano was one of the earliest frameworks used for building and training deep learning models, and it laid the foundation for many modern libraries like TensorFlow and PyTorch.
+-Theano is an open-source numerical computation library.
+-allowing for faster performance, especially for large-scale data and deep learning models.
+-Theano includes advanced memory management, reducing memory overhead by reusing memory space when possible.
+-Theano allows users to define complex mathematical expressions symbolically, and it automatically computes derivatives. This is crucial for neural networks, where backpropagation requires gradient calculations, and Theano simplifies this with automatic differentiation.
+-Theano inspired several popular deep learning frameworks, including Keras, which initially used Theano as its default backend before moving to TensorFlow.
+-TensorFlow also supports automatic differentiation, just like Theano, and it further improves upon Theano’s approach by making it more user-friendly and flexible. Both TensorFlow and Theano allow users to define complex mathematical expressions as computational graphs and automatically compute derivatives, which are essential for the backpropagation process in neural networks.
+
+Pytorch
+PyTorch has a built-in automatic differentiation system called autograd, which enables automatic gradient computation for complex mathematical functions. This is essential for backpropagation in neural networks and is as easy to use as TensorFlow’s tf.GradientTape.
+-PyTorch is an open-source deep learning framework developed by Facebook’s AI Research lab (FAIR) that has become very popular in both research and industry. Launched in 2016, PyTorch provides a flexible, dynamic computational graph, which makes it easy to build, modify, and experiment with neural networks in real-time
+-Unlike early versions of TensorFlow, which used static computational graphs, PyTorch operates with a dynamic computational graph, meaning it performs computations immediately as the code is run (known as eager execution)
+-PyTorch uses tensors (similar to Numpy arrays but with GPU acceleration) as the building blocks for computations. PyTorch makes it straightforward to move tensors between CPUs and GPUs, allowing for efficient computation and speeding up the training process.
+-TensorflowInitially used static computation graphs (deferred execution), where the graph is built first and executed later, which could make debugging more complex. However, newer TensorFlow versions (like TensorFlow 2.x) introduced eager execution as well, making TensorFlow more PyTorch-like.
+
+
+
+
+A GPU (Graphics Processing Unit) is a specialized processor designed to accelerate rendering graphics and performing complex computations in parallel
